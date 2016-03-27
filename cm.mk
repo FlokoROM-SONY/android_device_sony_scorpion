@@ -12,3 +12,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="SGP621-user 5.1.1 23.4.A.0.5
 
 PRODUCT_NAME := cm_scorpion
 PRODUCT_DEVICE := scorpion
+
+# RR Opti
+TARGET_ARCH := arm
+TARGET_CPU_VARIANT := krait
+TARGET_TOOLS_PREFIX=prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15/bin/arm-linux-androideabi-
+TARGET_TOOLCHAIN_ROOT := prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-cortex-a15
+TARGET_TC_ROM := 4.9-cortex-a15
+TARGET_TC_KERNEL := 4.9-cortex-a15
+RR_STRICT := true
+RR_GRAPHITE := true
+RR_KRAIT := true
+RROPTI := true
+RR_PIPE := true
+RR_O3 := true
