@@ -17,6 +17,9 @@ include device/sony/scorpion_windy/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
 
+# Boot cmd
+BOARD_KERNEL_CMDLINE += androidboot.hardware=scorpion
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
 
