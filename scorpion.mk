@@ -19,12 +19,26 @@ $(call inherit-product, device/sony/scorpion_windy/scorpion-common.mk)
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.scorpion \
+    init.scorpion \
+    ueventd.scorpion
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.scorpion
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.scorpion
+
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.scorpion
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
