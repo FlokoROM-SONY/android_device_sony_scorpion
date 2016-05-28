@@ -36,9 +36,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.scorpion
 
-# NFC config
-PRODUCT_PACKAGES += \
-    nfc_nci.scorpion
-
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
