@@ -17,6 +17,8 @@ include device/sony/scorpion_windy/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
 
+TARGET_SYSTEM_PROP += device/sony/scorpion/system.prop
+
 # Boot cmd
 BOARD_KERNEL_CMDLINE += androidboot.hardware=scorpion
 
