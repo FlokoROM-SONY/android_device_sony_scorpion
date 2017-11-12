@@ -52,12 +52,3 @@ etc/firmware/tzhdcp.b02
 etc/firmware/tzhdcp.b03
 etc/firmware/tzhdcp.flist
 etc/firmware/tzhdcp.mdt
-etc/firmware/wcd9320
-etc/firmware/wcd9320/wcd9320_anc.bin
-etc/firmware/wcd9320/wcd9320_mad_audio.bin
-etc/firmware/wcd9320/wcd9320_mbhc.bin
-etc/firmware/wlan
-etc/firmware/wlan/bcmdhd
-etc/firmware/wlan/bcmdhd/bcmdhd.cal
-etc/firmware/wlan/bcmdhd/fw_bcmdhd.bin
-etc/firmware/wlan/bcmdhd/fw_bcmdhd_apsta.bin
