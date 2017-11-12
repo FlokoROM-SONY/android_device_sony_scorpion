@@ -25,6 +25,9 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=scorpion
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
 
+# Kernel properties
+TARGET_KERNEL_CONFIG := lineageos_shinano_scorpion_defconfig
+
 # Not BLOCK BASED
 BLOCK_BASED_OTA := false
 
