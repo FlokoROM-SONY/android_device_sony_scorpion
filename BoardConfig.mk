@@ -15,15 +15,14 @@
 # inherit from the common shinano definitions
 include device/sony/scorpion_windy/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
-
 TARGET_SYSTEM_PROP += device/sony/scorpion/system.prop
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := lineageos_shinano_scorpion_defconfig
+#TARGET_KERNEL_CONFIG := lineageos_shinano_scorpion_defconfig
+TARGET_KERNEL_CONFIG := multirom_shinano_scorpion_defconfig
 
 # Not BLOCK BASED
 BLOCK_BASED_OTA := false

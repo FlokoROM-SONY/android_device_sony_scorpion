@@ -1,1 +1,1 @@
-add_lunch_combo cm_scorpion-eng
+add_lunch_combo omni_scorpion-eng

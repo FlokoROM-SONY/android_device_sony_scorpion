@@ -16,25 +16,3 @@ BOARD_HAVE_RADIO := true
 
 # Inherit the scorpion-common definitions
 $(call inherit-product, device/sony/scorpion_windy/scorpion-common.mk)
-
-# These are the hardware-specific features
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml
-
-# Device Init
-PRODUCT_PACKAGES += \
-    init.recovery.scorpion \
-    init.scorpion \
-    ueventd.scorpion
-
-# Lights
-PRODUCT_PACKAGES += \
-    lights.scorpion
-
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.scorpion
-
-# Include non-opensource parts
-$(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
