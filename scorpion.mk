@@ -36,5 +36,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.scorpion
 
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2016-05-01
+
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/scorpion/scorpion-vendor.mk)
