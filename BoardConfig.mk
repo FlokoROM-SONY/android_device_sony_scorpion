@@ -17,7 +17,7 @@ include device/sony/scorpion_windy/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/scorpion/include
 
-TARGET_SYSTEM_PROP += device/sony/scorpion/system.prop
+TARGET_SYSTEM_PROP += device/sony/scorpion/vendor.prop
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := SGP621,SGP641,SGP651,scorpion
