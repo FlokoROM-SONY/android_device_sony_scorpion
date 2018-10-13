@@ -1,1 +1,4 @@
-add_lunch_combo cm_scorpion-eng
+add_lunch_combo aicp_scorpion-userdebug
+add_lunch_combo aicp_scorpion-eng
+add_lunch_combo lineageos_scorpion-userdebug
+add_lunch_combo lineageos_scorpion-eng
