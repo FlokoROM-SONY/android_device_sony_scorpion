@@ -2,10 +2,7 @@
 PRODUCT_RELEASE_NAME := scorpion
 
 # Inherit AICP common tablet stuff.
-$(call inherit-product, vendor/aicp/config/common_full_tablet_wifionly.mk)
-
-# Inherit telephony stuff
-$(call inherit-product, vendor/aicp/config/telephony.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
 # Inherit AOSP scorpion device parts
 $(call inherit-product, device/sony/scorpion/full_scorpion.mk)
