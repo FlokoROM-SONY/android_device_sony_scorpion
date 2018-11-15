@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 # Inherit AOSP scorpion device parts
 $(call inherit-product, device/sony/scorpion/full_scorpion.mk)
 
+# Inherit shipping API level
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
+
 PRODUCT_DEVICE := scorpion
 PRODUCT_NAME := aicp_scorpion
 PRODUCT_BRAND := Sony
