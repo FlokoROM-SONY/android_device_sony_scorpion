@@ -14,9 +14,13 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aosp_scorpion.mk \
     $(LOCAL_DIR)/lineage_scorpion.mk
 
 COMMON_LUNCH_CHOICES := \
+    aosp_scorpion-user \
+    aosp_scorpion-userdebug \
+    aosp_scorpion-eng \
     lineage_scorpion-user \
     lineage_scorpion-userdebug \
     lineage_scorpion-eng
